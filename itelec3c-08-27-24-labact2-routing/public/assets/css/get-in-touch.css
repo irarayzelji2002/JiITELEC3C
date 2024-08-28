@@ -1,0 +1,112 @@
+/* SKILLS ONLY */
+.title-whole .title.title-get-in-touch {
+    color: #be5151;
+}
+.get-in-touch .title-header {
+    background-color: #fde778;
+}
+.container-title.container-title-get-in-touch {
+    color: #ffd0a5;
+}
+.get-in-touch .title-whole .title-flowers .box {
+    width: 499px;
+}
+.section.section-get-in-touch {
+    padding-top: 0;
+    padding-left: 80px;
+    padding-right: 80px;
+}
+.get-in-touch .moving-text-container {
+    position: relative;
+    height: 50px;
+    width: 100%;
+    margin-left: -80px;
+    margin-top: 20px;
+}
+.get-in-touch .moving-text {
+    position: absolute;
+    line-height: 1;
+    white-space: nowrap;
+    font-size: 36px;
+    color: #de9925;
+    opacity: 1;
+    text-align: left;
+    transition: opacity 0.3s ease-in-out;
+    will-change: transform;
+}
+.get-in-touch .moving-text:nth-child(1) {
+    animation: moveRight1 60s linear infinite;
+}
+.get-in-touch .moving-text:nth-child(2) {
+    animation: moveRight2 60s linear infinite;
+}
+.get-in-touch .moving-text span {
+    padding-left: 20px;
+    padding-right: 20px;
+}
+.get-in-touch .box-with-bg {
+    height: auto !important;
+}
+.get-in-touch .box-with-bg .circle {
+    border-radius: 0px;
+    width: 120px;
+    height: auto;
+    background-image: none;
+    margin: 25px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.get-in-touch .box-with-bg .circle .text {
+    font-size: 21px;
+    color: #ffd0a5;
+    font-weight: bold;
+    /* width: 100px; */
+    height: auto;
+    text-align: center;
+    word-break: break-all;
+    padding: 0 !important;
+    margin: auto;
+    margin-top: 10px;
+}
+.get-in-touch .socials-cont {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.get-in-touch .socials-div {
+    margin-top: 3px;
+}
+.get-in-touch .box-with-bg .circle .text.github {
+    width: 100px;
+}
+.get-in-touch .box-with-bg .circle img {
+    width: 120px;
+    height: 120px;
+}
+.get-in-touch .box-with-bg .flower.one {
+    left: 50%;
+    bottom: 0;
+    top: auto;
+    right: auto;
+    transform: translate(-50%, 50%);
+}
+@media (max-width: 1510px) {
+    .section.section-get-in-touch {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+}
+@media (max-width: 992px) {
+    .section.section-get-in-touch {
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+}
+@media (max-width: 576px) {
+    .section.section-get-in-touch {
+        padding-left: 0px;
+        padding-right: 0px;
+    }
+    .get-in-touch .box-with-bg .circle .text {
+        font-size: 18px;
+    }
+}

@@ -1,0 +1,103 @@
+.top-projects-arts .title-whole .title-flowers .box {
+    background-color: #7f2f30;
+    width: 498px;
+    margin-left: -44px;
+    margin-right: -44px;
+}
+.top-projects-arts .title-header {
+    background-color: #f38686;
+}
+
+.top-projects-arts .title-whole .title.title-top-projects-arts {
+    color: #fde778;
+}
+/* .top-projects-arts .subtitle-arts h2,
+.top-projects-arts .btn-more-details {
+    color: #7f2f30;
+} */
+.top-projects-arts .section {
+    /* background-color: rgba(127, 47 ,48, 0.5); */
+    background-image: linear-gradient(to bottom, #f38686, #be5151);
+}
+.top-projects-arts .moving-text-container {
+    position: relative;
+    height: 50px;
+    width: 100%;
+    margin-left: -80px;
+    margin-top: 20px;
+    opacity: 1;
+}
+.top-projects-arts .moving-text {
+    position: absolute;
+    line-height: 1;
+    white-space: nowrap;
+    font-size: 36px;
+    color: #662425;
+    opacity: 1;
+    text-align: left;
+    transition: opacity 0.3s ease-in-out;
+    will-change: transform;
+}
+.top-projects-arts .moving-text:nth-child(1) {
+    animation: moveRight1 60s linear infinite;
+}
+.top-projects-arts .moving-text:nth-child(2) {
+    animation: moveRight2 60s linear infinite;
+}
+.top-projects-arts .moving-text span {
+    padding-left: 20px;
+    padding-right: 20px;
+}
+.top-projects-arts .subtitle-it {
+    padding-top: 0px;
+}
+.top-projects-arts .text {
+    text-align: center;
+}
+.top-projects-arts .text p.project-details-p {
+    margin: 0;
+    filter: drop-shadow(2px 2px 2px rgba(176, 83, 83, 0.5));
+}
+.top-projects-arts .btn-more-details {
+    margin-top: 20px;
+    font-weight: 400;
+    padding-top: 3px;
+    padding-bottom: 3px;
+    font-size: 17px;
+}
+.top-projects-arts .btn-more-projects {
+    font-weight: 900;
+    font-size: 18px;
+}
+.section.section-top-projects-arts {
+    padding-top: 0;
+    background-image: linear-gradient(
+        to bottom,
+        #7f2f30 0%,
+        #7f2f30 70%,
+        #551d1e 95%,
+        #551d1e 100%
+    );
+}
+.section.section-top-projects-arts.last {
+    padding-bottom: 45px;
+}
+
+@media (max-width: 1510px) {
+    .section.section-top-projects-arts {
+        padding-left: 0px;
+        padding-right: 0px;
+    }
+}
+@media (max-width: 992px) {
+    .section.section-top-projects-arts {
+        padding-left: 0px;
+        padding-right: 0px;
+    }
+}
+@media (max-width: 576px) {
+    .section.section-top-projects-arts {
+        padding-left: 0px;
+        padding-right: 0px;
+    }
+}

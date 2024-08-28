@@ -1,0 +1,104 @@
+.top-projects-it .title-whole .title-flowers .box {
+    background-color: #f38686;
+    width: 498px;
+    margin-left: -44px;
+    margin-right: -44px;
+}
+.top-projects-it .title-header {
+    background-color: #f38686;
+}
+
+.top-projects-it .title-whole .title.title-top-projects-it {
+    color: #fde778;
+    filter: drop-shadow(2px 2px 5px #b05353);
+}
+.top-projects-it .text h3 {
+    filter: drop-shadow(5px 5px 5px #b05353);
+}
+.top-projects-it .section {
+    /* background-color: rgba(127, 47 ,48, 0.5); */
+    background-image: linear-gradient(to bottom, #f38686, #be5151);
+}
+.top-projects-it .moving-text-container {
+    position: relative;
+    height: 50px;
+    width: 100%;
+    margin-left: -80px;
+    margin-top: 20px;
+    opacity: 0.37;
+    mix-blend-mode: multiply;
+}
+.top-projects-it .moving-text {
+    position: absolute;
+    line-height: 1;
+    white-space: nowrap;
+    font-size: 36px;
+    color: #a84343;
+    opacity: 1;
+    text-align: left;
+    transition: opacity 0.3s ease-in-out;
+    will-change: transform;
+}
+.top-projects-it .moving-text:nth-child(1) {
+    animation: moveRight1 60s linear infinite;
+}
+.top-projects-it .moving-text:nth-child(2) {
+    animation: moveRight2 60s linear infinite;
+}
+.top-projects-it .moving-text span {
+    padding-left: 20px;
+    padding-right: 20px;
+}
+.top-projects-it .subtitle-it {
+    padding-top: 0px;
+}
+.top-projects-it .text {
+    text-align: center;
+}
+.top-projects-it .text p.project-details-p {
+    margin: 0;
+    filter: drop-shadow(2px 2px 2px rgba(176, 83, 83, 0.5));
+}
+.top-projects-it .btn-more-details {
+    margin-top: 20px;
+    font-weight: 400;
+    padding-top: 3px;
+    padding-bottom: 3px;
+    font-size: 17px;
+}
+.top-projects-it .btn-more-projects {
+    font-weight: 900;
+    font-size: 18px;
+}
+.section.section-top-projects-it {
+    padding-top: 0;
+    background-image: linear-gradient(
+        to bottom,
+        #f38686 0%,
+        #f38686 70%,
+        #be5151 95%,
+        #be5151 100%
+    );
+}
+.section.section-top-projects-it.last {
+    padding-bottom: 45px;
+}
+
+@media (max-width: 1510px) {
+    .section.section-top-projects-it {
+        padding-left: 0px;
+        padding-right: 0px;
+    }
+}
+@media (max-width: 992px) {
+    .section.section-top-projects-it {
+        padding-left: 0px;
+        padding-right: 0px;
+    }
+}
+@media (max-width: 576px) {
+    .section.section-top-projects-it {
+        padding-left: 0px;
+        padding-right: 0px;
+    }
+}

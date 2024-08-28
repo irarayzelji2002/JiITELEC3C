@@ -1,0 +1,196 @@
+.tech-stack .title-whole .title-flowers .box {
+    background-color: #7f2f30;
+    width: 314px;
+    margin-left: 50px;
+    margin-right: 50px;
+}
+.tech-stack .title-header {
+    background-color: #7f2f30;
+}
+
+.tech-stack .title-whole .title.title-tech-stack {
+    color: #fde778;
+}
+.tech-stack .section {
+    /* background-color: rgba(127, 47 ,48, 0.5); */
+    background-image: linear-gradient(to bottom, #7f2f30, #551d1e);
+}
+.tech-stack .box-with-bg {
+    /* background-color: rgba(253, 231, 120, 0.5); */
+    background-image: linear-gradient(to bottom, #fde778, #f9c437);
+}
+.tech-stack .container-title.container-title-tech-stack {
+    color: #7f2f30;
+}
+.tech-stack .box-with-bg .circle .text {
+    font-size: 18px;
+    border-radius: 0px;
+    color: #7f2f30;
+    font-weight: bold;
+    height: fit-content;
+}
+.tech-stack .box-with-bg .circle {
+    border-radius: 0px;
+    width: 180px;
+    height: 160px;
+    margin: 10px;
+    padding: 0px;
+    padding-top: 10px;
+    /* border: 1px solid black; */
+    /* background-color: rgba(177, 60, 60, 0.5); */
+    background-image: none;
+}
+.tech-stack .box-with-bg .circle img {
+    width: 65%;
+}
+
+.tech-stack .logo.html,
+.tech-stack .logo.css,
+.tech-stack .logo.csharp {
+    width: 60% !important;
+}
+.tech-stack .logo.js,
+.tech-stack .logo.py {
+    filter: drop-shadow(0px 0px 10px rgba(172, 128, 35, 0.7));
+}
+.tech-stack .logo.js,
+.tech-stack .logo.ts {
+    margin-bottom: 5px;
+}
+.tech-stack .logo.php {
+    width: 80% !important;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.tech-stack .logo.java {
+    width: 55% !important;
+    margin-top: -19px;
+}
+.tech-stack .logo.kotlin {
+    width: 60% !important;
+    margin-bottom: 8px;
+}
+.tech-stack .logo.xml {
+    width: 110% !important;
+    margin-left: -10px;
+    margin-top: 35px;
+    margin-bottom: 36px;
+}
+
+.tech-stack .box-with-bg .circle.frontend {
+    padding-top: 12px;
+    height: 141px;
+}
+.tech-stack .logo.react {
+    width: 68% !important;
+}
+.tech-stack .logo.mui {
+    width: 60% !important;
+    margin-top: 8px;
+    margin-bottom: 8px;
+}
+.tech-stack .logo.bootstrap {
+    width: 60% !important;
+    margin-top: 10px;
+}
+
+.tech-stack .box-with-bg .circle.backend {
+    height: 157px;
+}
+.tech-stack .logo.express {
+    width: 100% !important;
+    margin-top: 34px;
+    margin-bottom: 6px;
+}
+.tech-stack .logo.asp {
+    width: 85% !important;
+    margin-top: 21px;
+}
+.tech-stack .logo.laravel {
+    width: 60% !important;
+}
+
+.tech-stack .box-with-bg .circle.backend {
+    height: 169px;
+}
+
+.tech-stack .box-with-bg .circle.db {
+    height: 151px;
+}
+.tech-stack .logo.firebase {
+    width: 50% !important;
+}
+.tech-stack .logo.mysql {
+    width: 90% !important;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+.tech-stack .logo.sqlserver {
+    width: 80% !important;
+    margin-top: -5px;
+}
+
+.tech-stack .moving-text-container {
+    position: relative;
+    height: 50px;
+    width: 100%;
+    margin-left: -80px;
+    margin-top: 20px;
+}
+.tech-stack .moving-text {
+    position: absolute;
+    line-height: 1;
+    white-space: nowrap;
+    font-size: 36px;
+    color: #662425;
+    opacity: 1;
+    text-align: left;
+    transition: opacity 0.3s ease-in-out;
+    will-change: transform;
+}
+.tech-stack .moving-text:nth-child(1) {
+    animation: moveRight1 60s linear infinite;
+}
+.tech-stack .moving-text:nth-child(2) {
+    animation: moveRight2 60s linear infinite;
+}
+.tech-stack .moving-text span {
+    padding-left: 20px;
+    padding-right: 20px;
+}
+.section.section-tech-stack {
+    padding-top: 0;
+    padding-left: 80px;
+    padding-right: 80px;
+}
+@media (max-width: 1510px) {
+    .section.section-tech-stack {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+}
+@media (max-width: 992px) {
+    .section.section-tech-stack {
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+}
+@media (max-width: 576px) {
+    .section.section-tech-stack {
+        padding-left: 0px;
+        padding-right: 0px;
+    }
+    .tech-stack .box-with-bg.two,
+    .tech-stack .box-with-bg.four {
+        box-shadow: 2px 0px 0px #db9600;
+    }
+    .tech-stack .box-with-bg.three,
+    .tech-stack .box-with-bg.five {
+        box-shadow: -2px 0px 0px #db9600;
+    }
+}
+@media (max-width: 427px) {
+    .tech-stack .box-with-bg {
+        border: none !important;
+    }
+}

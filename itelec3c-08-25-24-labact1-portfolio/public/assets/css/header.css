@@ -1,0 +1,530 @@
+.header-portion {
+    height: 994.35px; /*105vh*/
+}
+
+/* LEFT (PEACH) */
+.header-portion.left {
+    /* border: 1px solid black; */
+    position: relative;
+    overflow-y: hidden;
+}
+.left-with-rec {
+    position: relative;
+    /* background-color: rgba(79, 202, 95, 0.5); */
+    background-image: linear-gradient(to bottom, #ffd0a5, #d19b6a);
+}
+.header .rec {
+    position: absolute;
+    height: 994.35px;
+    width: 100%;
+    right: 0;
+    transform: translate(100%, -100%);
+    /* background-color: rgba(44, 180, 62, 0.5); */
+    background-image: linear-gradient(to bottom, #ffd0a5, #d19b6a);
+}
+.header-portion.left .ira-pic,
+.header-portion.left .flowers {
+    position: absolute;
+    width: 730px;
+    right: 0;
+    transform: translateX(-42px);
+    margin-top: 15vh;
+}
+.header-portion.left .flowers {
+    /* border: 1px solid red; */
+    height: 100%;
+}
+.header-portion.left .outline-flower {
+    position: absolute;
+    top: 8%;
+    left: -13.5%;
+    width: 430px;
+    animation: rotateDiv 30s linear infinite;
+}
+.header-portion.left .solid-flower-1 {
+    position: absolute;
+    width: 45px;
+    left: 16%;
+    top: -20px;
+    rotate: -10deg;
+    animation: rotateDivNeg10 30s linear infinite;
+}
+.header-portion.left .solid-flower-2 {
+    position: absolute;
+    width: 95px;
+    left: 41%;
+    top: -65px;
+    rotate: -45deg;
+    animation: rotateDivNeg45 30s linear infinite;
+}
+.header-portion.left .solid-flower-3 {
+    position: absolute;
+    width: 65px;
+    right: 26.5%;
+    top: 200px;
+    rotate: -40deg;
+    animation: rotateDivNeg40 30s linear infinite;
+}
+
+/* RIGHT (PINK) */
+.header-portion.right {
+    /* border: 1px solid black; */
+    position: relative;
+}
+.header-portion.right .text {
+    /* border: 1px solid black; */
+    height: 946px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    width: 500.85px;
+    z-index: 3;
+}
+.header-portion.right .flowers {
+    /* border: 1px solid red; */
+    height: 994.35px;
+    width: calc(100% + 350px);
+    right: 0;
+    transform: translateX(-115px);
+    /* transform: translateX(-50%); */
+    position: absolute;
+    overflow: hidden;
+}
+.header-portion.right .outline-flower-1 {
+    position: absolute;
+    top: -196px;
+    left: 216px;
+    width: 500px;
+    animation: rotateDiv 30s linear infinite;
+}
+.header-portion.right .solid-flower-1 {
+    position: absolute;
+    width: 80px;
+    right: 22.6%;
+    top: 175px;
+    rotate: -13deg;
+    animation: rotateDivNeg13 30s linear infinite;
+}
+.header-portion.right .solid-flower-2 {
+    position: absolute;
+    width: 100px;
+    right: 6.5%;
+    top: 155px;
+    animation: rotateDiv 30s linear infinite;
+}
+.header-portion.right .solid-flower-3 {
+    position: absolute;
+    width: 45px;
+    right: 13.2%;
+    top: 335px;
+    rotate: -13deg;
+    animation: rotateDivNeg13 30s linear infinite;
+}
+.header-portion.right .solid-flower-4 {
+    position: absolute;
+    width: 52px;
+    left: 49.7%;
+    bottom: 174px;
+    rotate: -13deg;
+    animation: rotateDivNeg13 30s linear infinite;
+}
+.header-portion.right .solid-flower-5 {
+    position: absolute;
+    width: 100px;
+    right: 28.7%;
+    bottom: 85px;
+    animation: rotateDiv 30s linear infinite;
+}
+.header-portion.right .outline-flower-2 {
+    position: absolute;
+    width: 500px;
+    right: -250px;
+    bottom: -201px;
+    animation: rotateDiv 30s linear infinite;
+}
+@keyframes rotateDiv {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+@keyframes rotateDivNeg10 {
+    0% {
+        transform: rotate(-10deg);
+    }
+    100% {
+        transform: rotate(350deg);
+    }
+}
+@keyframes rotateDivNeg13 {
+    0% {
+        transform: rotate(-13deg);
+    }
+    100% {
+        transform: rotate(347deg);
+    }
+}
+@keyframes rotateDivNeg40 {
+    0% {
+        transform: rotate(-40deg);
+    }
+    100% {
+        transform: rotate(320deg);
+    }
+}
+@keyframes rotateDivNeg45 {
+    0% {
+        transform: rotate(-45deg);
+    }
+    100% {
+        transform: rotate(315deg);
+    }
+}
+.header-portion.right .text h1 {
+    display: block;
+    text-align: left;
+    filter: drop-shadow(5px 5px 5px #b05353);
+}
+.header-portion.right .text p {
+    text-align: justify;
+    text-justify: inter-word;
+    color: white;
+    margin-top: 20px;
+    line-height: 1.4;
+    font-size: 20px;
+    filter: drop-shadow(2px 2px 2px rgba(176, 83, 83, 0.5));
+}
+.header-portion.right .title {
+    margin-top: 80px;
+}
+.header-portion.right h1 {
+    color: #f5cd9e;
+    font-size: 120px;
+    line-height: 0.8;
+}
+.header-portion.right h1:nth-child(2) {
+    color: #f5cd9e;
+    font-size: 102px;
+}
+.right-with-diagonal {
+    position: relative;
+    transform: translateX(115px);
+    /* background-color: rgba(177, 60, 60, 0.5); */
+    background-image: linear-gradient(to bottom, #f38686, #be5151);
+}
+.header .diagonal {
+    position: absolute;
+    clip-path: polygon(50.5% 0, 100% 100%, 100% 0); /* adjust 1st for diagonal*/
+    height: 994.35px;
+    width: 940px;
+    left: 0;
+    transform: translateX(-940px);
+    /* center vertically */
+    top: 50%;
+    transform: translate(-940px, -50%);
+    /* background-color: rgba(177, 60, 60, 0.5); */
+    background-image: linear-gradient(to bottom, #f38686, #be5151);
+}
+
+/* moving text */
+.header-portion .moving-text-container {
+    /* border: 1px solid green; */
+    height: 994.35px;
+    width: 994.35px;
+    left: 0;
+    top: 50%;
+    transform: translate(-465px, -50%);
+    position: absolute;
+    overflow: hidden;
+    opacity: 0.37;
+    mix-blend-mode: multiply;
+}
+.header-portion .moving-text {
+    position: absolute;
+    line-height: 1;
+    white-space: nowrap;
+    font-size: 36px;
+    color: #a84343;
+    opacity: 1;
+    text-align: left;
+    rotate: 65deg;
+    transition: opacity 0.3s ease-in-out;
+}
+/*-90%*/
+.header-portion .moving-text:nth-child(1) {
+    top: 60%;
+    left: -58%;
+    animation: moveDiagonally1 30s linear infinite;
+}
+/*-202*/
+.header-portion .moving-text:nth-child(2) {
+    top: -96%;
+    left: -130.7%;
+    animation: moveDiagonally2 30s linear infinite;
+}
+.header-portion .moving-text p {
+    margin: 0;
+    padding: 0;
+}
+.header-portion .moving-text span {
+    padding-left: 20px;
+    padding-right: 20px;
+}
+.header-portion .moving-text .indent {
+    margin-left: 170px;
+}
+
+@keyframes moveDiagonally1 {
+    0% {
+        transform: translate3d(0%, 0, 0);
+    }
+    100% {
+        transform: translate3d(100%, 0, 0);
+    }
+}
+@keyframes moveDiagonally2 {
+    0% {
+        transform: translate3d(0%, 0, 0);
+    }
+    100% {
+        transform: translate3d(91.4%, 0, 0);
+    }
+}
+
+@media (max-width: 1920px) {
+    .header-portion.right .text {
+        transform: translateX(30px);
+    }
+}
+@media (max-width: 1400px) {
+    .header-portion.right .text {
+        transform: translateX(-30px);
+        width: 470px;
+    }
+    .header-portion.left .ira-pic,
+    .header-portion.left .flowers {
+        width: 600px;
+        transform: translateX(-10%);
+    }
+    .header-portion.left .outline-flower {
+        top: 3%;
+        left: -25%;
+    }
+    .header-portion.left .solid-flower-3 {
+        top: 160px;
+    }
+    .header-portion.right .outline-flower-1 {
+        left: 200px;
+    }
+    .header-portion.right .solid-flower-4 {
+        left: 56.1%;
+    }
+    .header-portion.right .solid-flower-5 {
+        right: 19.6%;
+    }
+    .header-portion.right .outline-flower-2 {
+        right: -350px;
+    }
+}
+@media (max-width: 1325px) {
+    .header-portion.right .text {
+        width: 450px;
+    }
+    .header-portion.right h1:nth-child(2) {
+        font-size: 90px;
+    }
+    .header-portion.left .ira-pic,
+    .header-portion.left .flowers {
+        width: 550px;
+        transform: translateX(-15%);
+    }
+    .header-portion.left .outline-flower {
+        top: 0%;
+        left: -30%;
+    }
+    .header-portion.left .solid-flower-3 {
+        top: 140px;
+    }
+    .header-portion.right .outline-flower-1 {
+        left: 175px;
+    }
+    .header-portion.right .solid-flower-4 {
+        left: 58%;
+    }
+    .header-portion.right .solid-flower-5 {
+        right: 20%;
+    }
+}
+@media (max-width: 1200px) {
+    .left-with-rec {
+        display: none;
+    }
+    .right-with-diagonal {
+        position: relative;
+        transform: translateX(0px);
+    }
+    .header-portion.right .text {
+        transform: translateX(0px);
+        width: 70%;
+        margin: auto;
+    }
+    .header-portion.right .flowers {
+        transform: translateX(0px);
+        width: 100%;
+    }
+    .header-portion.right .outline-flower-2 {
+        right: -250px;
+    }
+    .header-portion.right .solid-flower-4 {
+        left: 30%;
+    }
+    .header-portion.right .solid-flower-5 {
+        right: 35%;
+    }
+    .header-portion .moving-text-container {
+        transform: translate(-430px, -30%);
+        rotate: 25deg;
+    }
+    .header-portion .moving-text p:nth-child(1) {
+        opacity: 0;
+    }
+    .header-portion.right .text {
+        padding-left: 42px;
+    }
+}
+@media (max-width: 992px) {
+    .header-portion.right .outline-flower-1 {
+        left: 70px;
+        width: 400px;
+        top: -140px;
+    }
+}
+@media (max-width: 768px) {
+    .header-portion.right h1:nth-child(2) {
+        font-size: 85px;
+    }
+    .header-portion.right .outline-flower-1 {
+        left: 60px;
+        width: 350px;
+        top: -140px;
+    }
+    .header-portion.right .solid-flower-1 {
+        right: 32%;
+        top: 250px;
+    }
+    .header-portion.right .outline-flower-2 {
+        right: -350px;
+    }
+}
+@media (max-width: 576px) {
+    .header-portion.right h1:nth-child(2) {
+        font-size: 70px;
+    }
+    .header-portion.right .text {
+        width: 80%;
+    }
+}
+@media (max-width: 480px) {
+    .header-portion.right .outline-flower-1 {
+        left: -120px;
+    }
+    .header-portion.right .solid-flower-1,
+    .header-portion.right .solid-flower-3,
+    .header-portion.right .solid-flower-5 {
+        opacity: 0;
+    }
+    .header-portion .moving-text-container {
+        opacity: 0;
+    }
+    .header-portion.right .text {
+        padding-left: 0;
+    }
+}
+@media screen and (max-width: 320px), screen and (max-height: 890px) {
+    .header-portion.right .text p {
+        font-size: 18px;
+    }
+}
+@media (max-height: 946px) {
+    .header-portion.right .text {
+        height: 100vh;
+    }
+}
+@media (max-height: 869px) {
+    .header-portion.right .title {
+        margin-top: 50px;
+    }
+    .header-portion.right .outline-flower-1 {
+        top: -260px;
+    }
+}
+@media (max-height: 826px) {
+    .header-portion.right .outline-flower-1 {
+        top: -300px;
+    }
+    .header-portion.right .solid-flower-2 {
+        top: 100px;
+    }
+    .header-portion.right .solid-flower-3,
+    .header-portion.right .solid-flower-4 {
+        opacity: 0;
+    }
+    .header-portion.right .outline-flower-2 {
+        bottom: -320px;
+    }
+}
+@media (max-height: 785px) {
+    .header-portion.right .outline-flower-1 {
+        top: -380px;
+    }
+    .header-portion.right .solid-flower-1 {
+        top: 150px;
+    }
+    .header-portion.right .solid-flower-5 {
+        opacity: 0;
+    }
+    .header-portion.right h1:nth-child(1) {
+        font-size: 100px;
+    }
+    .header-portion.right h1:nth-child(2) {
+        font-size: 80px;
+    }
+    .header-portion.right .text p {
+        font-size: 18px;
+    }
+}
+@media (max-height: 603px) {
+    .header-portion.left .solid-flower-1,
+    .header-portion.left .solid-flower-2 {
+        opacity: 0;
+    }
+    .header-portion.right .solid-flower-1 {
+        top: 100px;
+    }
+    .header-portion.right .solid-flower-2 {
+        top: 80px;
+    }
+    .header-portion.right .outline-flower-1,
+    .header-portion.right .outline-flower-2 {
+        opacity: 0;
+    }
+}
+@media (max-height: 579px) {
+    .header-portion.right .solid-flower-1,
+    .header-portion.right .solid-flower-2,
+    .header-portion.right .outline-flower-2 {
+        opacity: 0;
+    }
+    .header-portion.right h1:nth-child(1) {
+        font-size: 80px;
+    }
+    .header-portion.right h1:nth-child(2) {
+        font-size: 55px;
+    }
+    .header-portion.right .text p {
+        font-size: 15px;
+    }
+}
