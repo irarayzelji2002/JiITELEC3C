@@ -26,8 +26,8 @@ Route::get('/contact', function () {
     return view('pages.contact');
 })->name('contact');
 
-Route::get('/projects/{id}', function ($id) {
-    return view('pages.projects.sublogger', ['id' => $id]);
+Route::get('/projects/{type}/{name}', function ($type, $name) {
+    return view('pages.projects.'.$type.'.'.$name);
 })->name('project-details');
 
 Route::get('/test', function () {

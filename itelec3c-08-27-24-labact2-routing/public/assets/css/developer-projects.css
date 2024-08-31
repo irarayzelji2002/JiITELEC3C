@@ -1,0 +1,188 @@
+/* NAVBAR */
+.navbar-brand {
+    overflow: hidden;
+}
+.navbar-brand img {
+    filter: drop-shadow(0px 1000px 0 white);
+    transform: translateY(-1000px);
+}
+.nav-link-dropdown {
+    text-shadow: none;
+}
+.dropdown-below-nav {
+    background-color: #cc6262 !important;
+    /* filter: drop-shadow(0px 5px 5px rgba(176, 83, 83, 1)); */
+    border-radius: 20px;
+    padding: 10px;
+}
+.nav-link-dropdown:hover,
+.nav-link-dropdown:focus,
+.nav-link-dropdown:active {
+    background-color: #9d3a3b;
+}
+@media (max-width: 1200px) {
+    nav img {
+        filter: none;
+        transform: none;
+    }
+}
+/* DEVELOPER PROJECTS */
+.developer-projects {
+    padding-top: 50px;
+    background-color: #f38686;
+}
+.developer-projects .title-whole .title-flowers .box {
+    background-color: #f38686;
+    width: 498px;
+    margin-left: -44px;
+    margin-right: -44px;
+}
+.developer-projects .title-header {
+    background-color: #f38686;
+}
+
+.developer-projects .title-whole .title.title-developer-projects {
+    color: #fde778;
+    filter: drop-shadow(2px 2px 5px #b05353);
+}
+.developer-projects .text h3 {
+    font-size: 28px;
+    color: #be5151;
+    /* filter: drop-shadow(5px 5px 5px #b05353); */
+}
+.developer-projects .section {
+    /* background-color: rgba(127, 47 ,48, 0.5); */
+    background-image: linear-gradient(to bottom, #f38686, #be5151);
+}
+.developer-projects .container {
+    padding: 0px 50px 0px 50px;
+}
+.developer-projects .box-with-bg {
+    width: 100%;
+    margin: 15px 0;
+    padding: 0;
+    background-color: #ffe2c8;
+    background-image: none;
+    /* background-image: linear-gradient(to bottom, #fde778, #f9c437); */
+}
+.developer-projects .full-screen-img-cont {
+    height: 478px;
+}
+.developer-projects .full-screen-img-cont img {
+    height: 100%;
+    width: auto;
+    object-fit: cover;
+}
+.developer-projects .moving-text-container {
+    position: relative;
+    height: 50px;
+    width: 100%;
+    margin-left: -80px;
+    margin-top: 20px;
+    opacity: 0.37;
+    mix-blend-mode: multiply;
+}
+.developer-projects .moving-text {
+    position: absolute;
+    line-height: 1;
+    white-space: nowrap;
+    font-size: 36px;
+    color: #a84343;
+    opacity: 1;
+    text-align: left;
+    transition: opacity 0.3s ease-in-out;
+    will-change: transform;
+}
+.developer-projects .moving-text:nth-child(1) {
+    animation: moveRight1 60s linear infinite;
+}
+.developer-projects .moving-text:nth-child(2) {
+    animation: moveRight2 60s linear infinite;
+}
+.developer-projects .moving-text span {
+    padding-left: 20px;
+    padding-right: 20px;
+}
+.developer-projects .subtitle-it {
+    padding-top: 0px;
+}
+.developer-projects .text {
+    text-align: center;
+}
+.developer-projects .text p.project-details-p {
+    margin: 0;
+    font-size: 17px;
+    color: #7f2f30;
+    /* filter: drop-shadow(2px 2px 2px rgba(176, 83, 83, 0.5)); */
+}
+.developer-projects .btn-more-details {
+    margin-top: 20px;
+    font-weight: 400;
+    padding-top: 3px;
+    padding-bottom: 3px;
+    font-size: 17px;
+}
+.developer-projects .btn-more-projects {
+    font-weight: 900;
+    font-size: 18px;
+}
+.section.section-developer-projects {
+    padding-top: 0;
+    background-image: linear-gradient(to bottom, #f38686 0%, #be5151 100%);
+}
+.section.section-developer-projects-moving-text {
+    padding-top: 20px;
+    background-color: #be5151;
+    background-image: none;
+}
+.section.section-developer-projects-moving-text .moving-text-container {
+    margin-top: 0;
+}
+.section.section-developer-projects.last {
+    padding-bottom: 45px;
+}
+
+@media (max-width: 1510px) {
+    .section.section-developer-projects {
+        padding-left: 0px;
+        padding-right: 0px;
+    }
+}
+@media (max-width: 1400px) {
+    .developer-projects .container {
+        padding: 0px 40px 0px 40px;
+    }
+    .developer-projects .text h3 {
+        font-size: 27px;
+    }
+}
+@media (max-width: 992px) {
+    .section.section-developer-projects {
+        padding-left: 0px;
+        padding-right: 0px;
+    }
+    .developer-projects .container {
+        padding: 0px 30px 0px 30px;
+    }
+    .col-sm-6 {
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+    .developer-projects .text h3 {
+        font-size: 24px;
+    }
+}
+@media (max-width: 767px) {
+    .box-with-bg {
+        border-radius: 0;
+    }
+    .developer-projects .container {
+        padding: 0;
+    }
+}
+@media (max-width: 576px) {
+    .section.section-developer-projects {
+        padding-left: 0px;
+        padding-right: 0px;
+    }
+}
