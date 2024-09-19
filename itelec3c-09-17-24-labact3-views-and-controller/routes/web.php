@@ -11,9 +11,9 @@ Route::get('/register', [StudentController::class, 'showForm'])->name('student-r
 
 Route::post('/register', [StudentController::class, 'submitForm'])->name('student-reg-submit');
 
-Route::get('/register-success',function () {
-    return view('student.studentRegSuccess');
-})->name('student-reg');
+// Route::get('/register-success',function () {
+//     return view('student.studentRegSuccess');
+// })->name('student-reg-success');
 
 Route::fallback(function () {
     $error = "Page Not Found";

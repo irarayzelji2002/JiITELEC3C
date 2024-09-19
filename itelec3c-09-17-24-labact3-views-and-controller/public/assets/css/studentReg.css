@@ -3,22 +3,26 @@
     background-image: url("/assets/elements/bg/main-building.jpg");
     background-repeat: no-repeat;
     background-size: cover;
+    min-height: calc(100vh - 76px);
+    background-position: center;
 }
 .student-reg-card {
-    width: 700px;
+    width: 800px;
     padding: 1rem;
     border-radius: 1rem;
     background-color: rgba(255, 255, 255);
 }
 .student-reg-form-cont {
-    padding: 2rem;
+    padding: 2.5rem;
+    height: 100%;
+    display: flex;
+    align-items: center;
 }
 .student-reg-form .form-group {
     margin-bottom: 1rem;
 }
 .student-reg-title {
     text-align: center;
-    /* margin-top: 20px; */
 }
 .student-reg-p {
     font-size: 1rem;
@@ -33,23 +37,44 @@
 .required-span {
     color: red;
 }
-@media only screen and (max-width: 576px) {
-    .student-reg-form-cont {
-        padding: 0;
-    }
-    .student-reg-card {
-        border-radius: 0;
-    }
-    .student-reg-p {
-        font-size: 0.9rem;
-    }
+.err-msg {
+    font-size: 0.9rem;
+    margin-left: 0.5rem;
 }
 
 /* SUCCESS */
 .student-reg-success .detail {
     margin-bottom: 1rem;
 }
-/* .student-reg-success .details {
-    margin: auto;
-    width: fit-content;
-} */
+.student-reg-success-card {
+    width: 576px;
+    padding: 1rem;
+    border-radius: 1rem;
+    background-color: rgba(255, 255, 255);
+}
+.student-reg-success .title-cont {
+    text-align: center;
+    margin-bottom: 1.3rem;
+}
+.student-reg-success .success {
+    color: rgb(0, 102, 0);
+}
+.student-reg-success .error {
+    color: rgb(167, 0, 0);
+}
+.light-grey {
+    color: grey;
+}
+
+@media only screen and (max-width: 576px) {
+    .student-reg-form-cont {
+        padding: 0;
+    }
+    .student-reg-card,
+    .student-reg-success-card {
+        border-radius: 0;
+    }
+    .student-reg-p {
+        font-size: 0.9rem;
+    }
+}

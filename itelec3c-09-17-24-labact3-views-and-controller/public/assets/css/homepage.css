@@ -1,0 +1,79 @@
+.homepage {
+    background-image: linear-gradient(
+            0deg,
+            rgba(0, 0, 0, 0.5),
+            rgba(0, 0, 0, 0.5)
+        ),
+        url("/assets/elements/bg/main-building.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: calc(100vh - 76px);
+    background-position: center;
+    position: relative;
+}
+.homepage-title {
+    text-align: center;
+    color: white;
+    text-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+    font-size: 5rem;
+    padding: 0px 50px 0px 50px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: fit-content;
+    transform: translate(-50%, -50%);
+    width: 100%;
+}
+.homepage-title span {
+    display: block;
+}
+.ust-text {
+    color: #fec00f;
+    font-size: 14rem;
+    line-height: 0.8;
+}
+@media only screen and (max-width: 992px) {
+    .homepage-title {
+        font-size: 4.5rem;
+    }
+    .ust-text {
+        font-size: 12.2rem;
+        line-height: 0.8;
+    }
+}
+@media only screen and (max-width: 576px) {
+    .homepage-title {
+        font-size: 3.5rem;
+    }
+    .ust-text {
+        font-size: 10rem;
+        line-height: 0.8;
+    }
+    .homepage-title {
+        padding: 0px 30px 0px 30px;
+    }
+}
+@media only screen and (max-width: 477px) {
+    .homepage-title {
+        font-size: 3rem;
+    }
+    .ust-text {
+        font-size: 8.5rem;
+        line-height: 0.8;
+    }
+    .homepage-title {
+        padding: 0px 0px 0px 0px;
+    }
+}
+@media only screen and (max-width: 360px) {
+    .homepage-title {
+        font-size: 2.5rem;
+    }
+    .ust-text {
+        font-size: 7rem;
+        line-height: 0.8;
+    }
+    .homepage-title {
+        padding: 0px 0px 0px 0px;
+    }
+}

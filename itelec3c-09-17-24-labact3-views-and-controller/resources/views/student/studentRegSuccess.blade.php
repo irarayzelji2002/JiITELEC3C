@@ -6,61 +6,75 @@
 @section('content')
     <section class="student-reg-success" id="student-reg-success">
         @if (isset($data))
-            <h1>You have successfully registered for admission.</h1>
-            <h2>Submitted Details</h2>
-            <p><strong>Firstname:</strong> {{ $data['firstname'] }}</p>
-            <p><strong>Lastname:</strong> {{ $data['lastname'] }}</p>
-            <p><strong>Student Number:</strong> {{ $data['studentNo'] }}</p>
-            <p><strong>Gender:</strong> {{ $data['gender'] }}</p>
-            <p><strong>Birthday:</strong> {{ $data['birthday'] }}</p>
-            <p><strong>Course:</strong> {{ $data['course'] }}</p>
-            <p><strong>Email Address:</strong> {{ $data['email'] }}</p>
-            <p><strong>Contact Number:</strong> {{ $data['contactNo'] }}</p>
-            <p><strong>Additional Information:</strong> {{ $data['additionalInfo'] }}</p>
-        @else
             <div class="d-flex justify-content-center student-reg-form-cont">
-                <div class="card student-reg-card">
+                <div class="card student-reg-success-card">
                     <div class="card-body">
-                        <h3 class="card-title student-reg-title poppins-bold">You have successfully registered for admission!
-                        </h3>
+                        <div class="title-cont">
+                            <h3 class="card-title student-reg-success-title poppins-bold success">
+                                You have successfully registered for admission!
+                            </h3>
+                            <p class="card-text student-reg-p poppins-regular light-grey">
+                                You may close this tab.
+                            </p>
+                        </div>
                         <div class="details">
                             <h5 class="card-text student-reg-h3 poppins-bold">Submitted Details</h5>
                             <div class="detail">
-                                <div class="poppins-semibold">Firstname</div>
-                                <div>Ira Rayzel</div>
+                                <div class="poppins-semibold">First Name</div>
+                                <div>{{ $data['firstName'] }}</div>
                             </div>
                             <div class="detail">
-                                <div class="poppins-semibold">Lastname</div>
-                                <div>Ji</div>
+                                <div class="poppins-semibold">Last Name</div>
+                                <div>{{ $data['lastName'] }}</div>
                             </div>
                             <div class="detail">
                                 <div class="poppins-semibold">Student Number</div>
-                                <div>2020140320</div>
+                                <div>{{ $data['studentNo'] }}</div>
                             </div>
                             <div class="detail">
                                 <div class="poppins-semibold">Gender</div>
-                                <div>Female</div>
+                                <div>{{ $data['gender'] }}</div>
                             </div>
                             <div class="detail">
                                 <div class="poppins-semibold">Birthday</div>
-                                <div>2002-12-26</div>
+                                <div>{{ $data['birthday'] }}</div>
                             </div>
                             <div class="detail">
                                 <div class="poppins-semibold">Course</div>
-                                <div>BS in Information Technology</div>
+                                <div>{{ $data['course'] }}</div>
                             </div>
                             <div class="detail">
                                 <div class="poppins-semibold">Email Address</div>
-                                <div>irarayzelji@gmail.com</div>
+                                <div>{{ $data['email'] }}</div>
                             </div>
                             <div class="detail">
                                 <div class="poppins-semibold">Contact Number</div>
-                                <div>09985748368</div>
+                                <div>{{ $data['contactNo'] }}</div>
                             </div>
                             <div class="detail">
                                 <div class="poppins-semibold">Additional Information</div>
-                                <div>None</div>
+                                <div>{{ $data['additionalInfo'] ?? 'None' }}</div>
                             </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        @else
+            <div class="d-flex justify-content-center student-reg-form-cont">
+                <div class="card student-reg-success-card">
+                    <div class="card-body">
+                        <div class="title-cont">
+                            <h3 class="card-title student-reg-success-title poppins-bold error">
+                                An error occurred when registering.
+                            </h3>
+                            <p class="card-text student-reg-p poppins-regular light-grey">
+                                Please register again by clicking the button below.
+                            </p>
+                        </div>
+                        <div class="d-flex justify-content-center">
+                            <a class="btn btn-primary btn-yellow" href="{{ route('student-reg') }}" role="button">
+                                Register as a Student
+                            </a>
                         </div>
                     </div>
                 </div>

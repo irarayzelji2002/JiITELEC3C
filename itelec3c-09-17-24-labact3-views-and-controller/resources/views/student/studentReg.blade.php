@@ -17,37 +17,50 @@
                         @csrf
                         <div class="row">
                             <div class="form-group col-xl-6 col-lg-12">
-                                <label class="poppins-semibold" for="firstname">
-                                    Firstname
-                                    <span class="required-span">*</span>
+                                <label class="poppins-semibold" for="firstName">
+                                    First Name
+                                    <span class="text-danger">*</span>
+                                    @error('firstName')
+                                        <span class="text-danger err-msg">{{ $message }}</span>
+                                    @enderror
                                 </label>
-                                <input class="form-control" type="text" id="firstname" name="firstname" maxlength="255"
-                                    value="{{ old('firstname') }}" required>
+
+                                <input class="form-control" type="text" id="firstName" name="firstName" maxlength="255"
+                                    value="{{ old('firstName') }}">
                             </div>
 
                             <div class="form-group col-xl-6 col-lg-12">
-                                <label class="poppins-semibold" for="lastname">
-                                    Lastname
-                                    <span class="required-span">*</span>
+                                <label class="poppins-semibold" for="lastName">
+                                    Last Name
+                                    <span class="text-danger">*</span>
+                                    @error('lastName')
+                                        <span class="text-danger err-msg">{{ $message }}</span>
+                                    @enderror
                                 </label>
-                                <input class="form-control" type="text" id="lastname" name="lastname" maxlength="255"
-                                    value="{{ old('lastname') }}" required>
+                                <input class="form-control" type="text" id="lastName" name="lastName" maxlength="255"
+                                    value="{{ old('lastName') }}">
                             </div>
                         </div>
 
                         <div class="form-group">
                             <label class="poppins-semibold" for="studentNo">
                                 Student Number
-                                <span class="required-span">*</span>
+                                <span class="text-danger">*</span>
+                                @error('studentNo')
+                                    <span class="text-danger err-msg">{{ $message }}</span>
+                                @enderror
                             </label>
                             <input class="form-control" type="text" id="studentNo" name="studentNo" maxlength="10"
-                                value="{{ old('studentNo') }}" required>
+                                value="{{ old('studentNo') }}">
                         </div>
 
                         <div class="form-group">
                             <label class="poppins-semibold">
                                 Gender
-                                <span class="required-span">*</span>
+                                <span class="text-danger">*</span>
+                                @error('gender')
+                                    <span class="text-danger err-msg">{{ $message }}</span>
+                                @enderror
                             </label><br>
                             <div class="d-flex">
                                 <div class="form-check form-check-inline flex-fill">
@@ -71,10 +84,13 @@
                         <div class="form-group">
                             <label class="poppins-semibold" for="birthday">
                                 Birthday
-                                <span class="required-span">*</span>
+                                <span class="text-danger">*</span>
+                                @error('birthday')
+                                    <span class="text-danger err-msg">{{ $message }}</span>
+                                @enderror
                             </label>
                             <input class="form-control" type="date" id="birthday" name="birthday"
-                                value="{{ old('birthday') }}" required>
+                                value="{{ old('birthday') }}">
                         </div>
 
                         <div class="form-group">
@@ -97,24 +113,33 @@
                         <div class="form-group">
                             <label class="poppins-semibold" for="email">
                                 Email Address
-                                <span class="required-span">*</span>
+                                <span class="text-danger">*</span>
+                                @error('email')
+                                    <span class="text-danger err-msg">{{ $message }}</span>
+                                @enderror
                             </label>
                             <input class="form-control" type="email" id="email" name="email"
-                                value="{{ old('email') }}" required>
+                                value="{{ old('email') }}">
                         </div>
 
                         <div class="form-group">
                             <label class="poppins-semibold" for="contactNo">
                                 Contact Number
-                                <span class="required-span">*</span>
+                                <span class="text-danger">*</span>
+                                @error('contactNo')
+                                    <span class="text-danger err-msg">{{ $message }}</span>
+                                @enderror
                             </label>
                             <input class="form-control" type="text" id="contactNo" name="contactNo" maxlength="11"
-                                value="{{ old('contactNo') }}" required>
+                                value="{{ old('contactNo') }}">
                         </div>
 
                         <div class="form-group">
                             <label class="poppins-semibold" for="additionalInfo">Additional Information</label>
-                            <textarea class="form-control" id="additionalInfo" name="additionalInfo" rows="5" maxlength="255">{{ old('additionalInfo') }}</textarea>
+                            @error('additionalInfo')
+                                <span class="text-danger err-msg">{{ $message }}</span>
+                            @enderror
+                            <textarea class="form-control" id="additionalInfo" name="additionalInfo" rows="4" maxlength="255">{{ old('additionalInfo') }}</textarea>
                         </div>
 
                         <div class="d-flex justify-content-center">

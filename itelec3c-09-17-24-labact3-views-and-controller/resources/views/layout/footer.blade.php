@@ -6,7 +6,8 @@
             </div>
         </div>
         <div class="col-lg-4 col-md-12 footer-col">
-            <a class="btn btn-primary btn-blue uppercase" href="#" role="button">Register as a Student</a>
+            <a class="btn btn-primary btn-blue uppercase" href="{{ route('student-reg') }}" role="button">Register as a
+                Student</a>
         </div>
         <div class="col-lg-4 col-md-12 footer-col">
             <div class="d-flex justify-content-lg-end justify-content-md-center justify-content-center">
