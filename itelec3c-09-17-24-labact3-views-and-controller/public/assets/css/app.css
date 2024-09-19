@@ -1,0 +1,244 @@
+/* FONTS */
+.poppins-thin {
+    font-family: "Poppins", sans-serif;
+    font-weight: 100;
+    font-style: normal;
+}
+
+.poppins-extralight {
+    font-family: "Poppins", sans-serif;
+    font-weight: 200;
+    font-style: normal;
+}
+
+.poppins-light {
+    font-family: "Poppins", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+}
+
+.poppins-regular {
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.poppins-medium {
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+}
+
+.poppins-semibold {
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+}
+
+.poppins-bold {
+    font-family: "Poppins", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+}
+
+.poppins-extrabold {
+    font-family: "Poppins", sans-serif;
+    font-weight: 800;
+    font-style: normal;
+}
+
+.poppins-black {
+    font-family: "Poppins", sans-serif;
+    font-weight: 900;
+    font-style: normal;
+}
+
+.poppins-thin-italic {
+    font-family: "Poppins", sans-serif;
+    font-weight: 100;
+    font-style: italic;
+}
+
+.poppins-extralight-italic {
+    font-family: "Poppins", sans-serif;
+    font-weight: 200;
+    font-style: italic;
+}
+
+.poppins-light-italic {
+    font-family: "Poppins", sans-serif;
+    font-weight: 300;
+    font-style: italic;
+}
+
+.poppins-regular-italic {
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-style: italic;
+}
+
+.poppins-medium-italic {
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    font-style: italic;
+}
+
+.poppins-semibold-italic {
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+    font-style: italic;
+}
+
+.poppins-bold-italic {
+    font-family: "Poppins", sans-serif;
+    font-weight: 700;
+    font-style: italic;
+}
+
+.poppins-extrabold-italic {
+    font-family: "Poppins", sans-serif;
+    font-weight: 800;
+    font-style: italic;
+}
+
+.poppins-black-italic {
+    font-family: "Poppins", sans-serif;
+    font-weight: 900;
+    font-style: italic;
+}
+
+/* GLOBAL */
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    height: 100vh;
+    background-color: #f5cd9e;
+    font-family: "Geomanist";
+    font-weight: 500; /* regular */
+    font-style: normal;
+    font-size: 18px;
+    overflow-x: hidden;
+}
+
+.content {
+    width: 100%;
+    overflow: hidden;
+}
+
+.uppercase {
+    text-transform: uppercase;
+}
+
+.lowercase {
+    text-transform: lowercase;
+}
+
+.capitalize {
+    text-transform: capitalize;
+}
+
+/* .text h3 {
+    color: #f5cd9e;
+    font-size: 38px;
+    line-height: 1;
+}
+.text p {
+    text-align: justify;
+    text-justify: inter-word;
+    color: white;
+    margin-top: 20px;
+    line-height: 1.4;
+    font-size: 20px;
+    text-align: center;
+} */
+.btn {
+    font-weight: 900;
+    border-radius: 20px;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    color: #be5151;
+    background-color: #fde778;
+    border: 0;
+    align-self: center;
+}
+.btn:hover,
+.btn:focus,
+.btn:active {
+    color: #b14242;
+    background-color: #ffd255;
+}
+.btn:active:focus {
+    color: #b14242;
+    background-color: #ffc935;
+}
+
+.btn-pink {
+    color: #ffd0a5;
+    background-color: #be5151;
+}
+.btn-pink:hover,
+.btn-pink:focus,
+.btn-pink:active {
+    color: #ffd0a5;
+    background-color: #af4545;
+}
+.btn-pink:active:focus {
+    color: #ffd0a5;
+    background-color: #ad3c3c;
+}
+
+.btn-red {
+    color: #ffd0a5;
+    background-color: #7f2f30;
+}
+.btn-red:hover,
+.btn-red:focus,
+.btn-red:active {
+    color: #ffd0a5;
+    background-color: #702a2b;
+}
+.btn-red:active:focus {
+    color: #ffd0a5;
+    background-color: #631f20;
+}
+.btn-transparent {
+    color: transparent;
+    background-color: transparent;
+    width: 100%;
+    height: 100%;
+    padding: 0;
+    margin: 0;
+}
+.btn-transparent:hover,
+.btn-transparent:focus,
+.btn-transparent:active {
+    color: transparent;
+    background-color: transparent;
+}
+
+@media (max-width: 1400px) {
+}
+@media (max-width: 1200px) {
+}
+@media (max-width: 992px) {
+}
+@media (max-width: 768px) {
+}
+@media (max-width: 576px) {
+}
+
+/*
+xs: 0,
+sm: 576px,
+md: 768px,
+lg: 992px,
+xl: 1200px,
+xxl: 1400px
+*/
