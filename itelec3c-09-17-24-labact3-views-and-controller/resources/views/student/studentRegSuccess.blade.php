@@ -21,39 +21,39 @@
                             <h5 class="card-text student-reg-h3 poppins-bold">Submitted Details</h5>
                             <div class="detail">
                                 <div class="poppins-semibold">First Name</div>
-                                <div>{{ $data['firstName'] }}</div>
+                                <div>{{ $data['irjFirstName'] }}</div>
                             </div>
                             <div class="detail">
                                 <div class="poppins-semibold">Last Name</div>
-                                <div>{{ $data['lastName'] }}</div>
+                                <div>{{ $data['irjLastName'] }}</div>
                             </div>
                             <div class="detail">
                                 <div class="poppins-semibold">Student Number</div>
-                                <div>{{ $data['studentNo'] }}</div>
+                                <div>{{ $data['irjStudentNo'] }}</div>
                             </div>
                             <div class="detail">
                                 <div class="poppins-semibold">Gender</div>
-                                <div>{{ $data['gender'] }}</div>
+                                <div>{{ $data['irjGender'] }}</div>
                             </div>
                             <div class="detail">
                                 <div class="poppins-semibold">Birthday</div>
-                                <div>{{ $data['birthday'] }}</div>
+                                <div>{{ $data['irjBirthday'] }}</div>
                             </div>
                             <div class="detail">
                                 <div class="poppins-semibold">Course</div>
-                                <div>{{ $data['course'] }}</div>
+                                <div>{{ $data['irjCourse'] }}</div>
                             </div>
                             <div class="detail">
                                 <div class="poppins-semibold">Email Address</div>
-                                <div>{{ $data['email'] }}</div>
+                                <div>{{ $data['irjEmail'] }}</div>
                             </div>
                             <div class="detail">
                                 <div class="poppins-semibold">Contact Number</div>
-                                <div>{{ $data['contactNo'] }}</div>
+                                <div>{{ $data['irjContactNo'] }}</div>
                             </div>
                             <div class="detail">
                                 <div class="poppins-semibold">Additional Information</div>
-                                <div>{{ $data['additionalInfo'] ?? 'None' }}</div>
+                                <div>{{ $data['irjAdditionalInfo'] ?? 'None' }}</div>
                             </div>
                         </div>
                     </div>

@@ -8,6 +8,9 @@
         <h1 class="homepage-title">
             <span class="poppins-extrabold uppercase">Welcome to</span>
             <span class="poppins-extrabold uppercase ust-text">UST!</span>
+            <a class="btn btn-primary btn-blue uppercase" href="{{ route('student-reg') }}" role="button">
+                Register as a Student
+            </a>
         </h1>
     </section>
 @endsection

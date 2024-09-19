@@ -17,28 +17,31 @@ class StudentController extends Controller
     {
         // Validate the request data
         $validatedData = $request->validate([
-            'firstName' => 'required|string|max:255',
-            'lastName' => 'required|string|max:255',
-            'studentNo' => 'required|digits:10',
-            'gender' => 'required',
-            'birthday' => 'required|date|before_or_equal:today',
-            'course' => 'required',
-            'email' => 'required|email|max:255',
-            'contactNo' => 'required|digits:11',
-            'additionalInfo' => 'nullable|max:255'
+            'irjFirstName' => 'required|string|max:255',
+            'irjLastName' => 'required|string|max:255',
+            'irjStudentNo' => 'required|digits:10',
+            'irjGender' => 'required',
+            'irjBirthday' => 'required|date|before_or_equal:today',
+            'irjCourse' => 'required',
+            'irjEmail' => 'required|email|max:255',
+            'irjContactNo' => 'required|digits:11',
+            'irjAdditionalInfo' => 'nullable|max:255'
         ], [
             // Custom error messages
-            'studentNo.digits' => 'The student number must be a number of 10 digits.',
-            'birthday.before_or_equal' => 'The :attribute cannot be later than today.',
-            'contactNo.digits' => 'The contact number must be a number of 11 digits.'
+            'irjStudentNo.digits' => 'The student number must be a number of 10 digits.',
+            'irjBirthday.before_or_equal' => 'The :attribute cannot be later than today.',
+            'irjContactNo.digits' => 'The contact number must be a number of 11 digits.'
         ], [
             // Custom attribute names
-            'firstName' => 'first name',
-            'lastName' => 'last name',
-            'studentNo' => 'student number',
-            'birthday' => 'birthday',
-            'email' => 'email',
-            'contactNo' => 'contact number',
+            'irjFirstName' => 'first name',
+            'irjLastName' => 'last name',
+            'irjStudentNo' => 'student number',
+            'irjGender' => 'gender',
+            'irjBirthday' => 'birthday',
+            'irjCourse' => 'course',
+            'irjEmail' => 'email',
+            'irjContactNo' => 'contact number',
+            'irjAdditionalInfo' => 'additional information'
         ]);
 
         // Pass data to the view
