@@ -119,17 +119,17 @@ html {
 
 body {
     height: 100vh;
-    background-color: #f5cd9e;
-    font-family: "Geomanist";
-    font-weight: 500; /* regular */
+    background-color: #ffffff;
+    font-family: "Poppins";
+    font-weight: 400; /* regular */
     font-style: normal;
-    font-size: 18px;
     overflow-x: hidden;
 }
 
 .content {
     width: 100%;
     overflow: hidden;
+    padding-top: 76px;
 }
 
 .uppercase {
@@ -144,69 +144,62 @@ body {
     text-transform: capitalize;
 }
 
-/* .text h3 {
-    color: #f5cd9e;
-    font-size: 38px;
-    line-height: 1;
-}
-.text p {
+p {
     text-align: justify;
     text-justify: inter-word;
-    color: white;
     margin-top: 20px;
     line-height: 1.4;
-    font-size: 20px;
     text-align: center;
-} */
+}
 .btn {
-    font-weight: 900;
+    font-weight: 700;
     border-radius: 20px;
     padding-left: 2rem;
     padding-right: 2rem;
-    color: #be5151;
-    background-color: #fde778;
+    color: #1c1c1c;
+    background-color: #fec00f;
     border: 0;
     align-self: center;
 }
 .btn:hover,
 .btn:focus,
 .btn:active {
-    color: #b14242;
-    background-color: #ffd255;
+    color: #1c1c1c;
+    background-color: #fec00f;
 }
 .btn:active:focus {
-    color: #b14242;
-    background-color: #ffc935;
+    color: #1c1c1c;
+    background-color: #ffae00;
 }
 
-.btn-pink {
-    color: #ffd0a5;
-    background-color: #be5151;
+.btn-yellow {
+    color: #1c1c1c;
+    background-color: #fec00f;
 }
-.btn-pink:hover,
-.btn-pink:focus,
-.btn-pink:active {
-    color: #ffd0a5;
-    background-color: #af4545;
+.btn-yellow:hover,
+.btn-yellow:focus,
+.btn-yellow:active {
+    color: #1c1c1c;
+    background-color: #ffae00;
 }
-.btn-pink:active:focus {
-    color: #ffd0a5;
-    background-color: #ad3c3c;
+.btn-yellow:active:focus {
+    color: #1c1c1c;
+    background-color: #ffae00;
 }
 
-.btn-red {
-    color: #ffd0a5;
-    background-color: #7f2f30;
+.btn-blue {
+    color: #ffffff;
+    background-color: #00a1e4;
 }
-.btn-red:hover,
-.btn-red:focus,
-.btn-red:active {
-    color: #ffd0a5;
-    background-color: #702a2b;
+.btn-blue:hover,
+.btn-blue:focus,
+.btn-blue:active {
+    color: #ffffff;
+    background-color: #008aca;
 }
-.btn-red:active:focus {
-    color: #ffd0a5;
-    background-color: #631f20;
+.btn-blue:active:focus {
+    color: #ffffff;
+    background-color: #008aca;
 }
 .btn-transparent {
     color: transparent;

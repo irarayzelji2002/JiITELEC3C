@@ -1,0 +1,55 @@
+.student-reg,
+.student-reg-success {
+    background-image: url("/assets/elements/bg/main-building.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.student-reg-card {
+    width: 700px;
+    padding: 1rem;
+    border-radius: 1rem;
+    background-color: rgba(255, 255, 255);
+}
+.student-reg-form-cont {
+    padding: 2rem;
+}
+.student-reg-form .form-group {
+    margin-bottom: 1rem;
+}
+.student-reg-title {
+    text-align: center;
+    /* margin-top: 20px; */
+}
+.student-reg-p {
+    font-size: 1rem;
+    margin-top: 0;
+}
+.form-check-label {
+    font-size: 1rem;
+}
+.btn-reg {
+    margin-top: 1rem;
+}
+.required-span {
+    color: red;
+}
+@media only screen and (max-width: 576px) {
+    .student-reg-form-cont {
+        padding: 0;
+    }
+    .student-reg-card {
+        border-radius: 0;
+    }
+    .student-reg-p {
+        font-size: 0.9rem;
+    }
+}
+
+/* SUCCESS */
+.student-reg-success .detail {
+    margin-bottom: 1rem;
+}
+/* .student-reg-success .details {
+    margin: auto;
+    width: fit-content;
+} */

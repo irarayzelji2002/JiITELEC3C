@@ -19,12 +19,12 @@ class StudentController extends Controller
         $validatedData = $request->validate([
             'firstname' => 'required|string|max:255',
             'lastname' => 'required|string|max:255',
-            'studentNo' => 'required|numeric|max:10',
+            'studentNo' => 'required|digits:10',
             'gender' => 'required',
-            'birthday' => 'required|date_format:d/m/Y',
+            'birthday' => 'required|date|before_or_equal:today',
             'course' => 'required',
             'email' => 'required|email|max:255',
-            'contactNo' => 'required|numeric|max:11',
+            'contactNo' => 'required|digits:11',
             'additionalInfo' => 'nullable|max:255'
         ]);
 

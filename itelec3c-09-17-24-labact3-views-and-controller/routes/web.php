@@ -4,12 +4,16 @@ use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\StudentController;
 
 Route::get('/', function () {
-    return view('welcome');
+    return view('homepage');
 })->name('home');
 
 Route::get('/register', [StudentController::class, 'showForm'])->name('student-reg');
 
 Route::post('/register', [StudentController::class, 'submitForm'])->name('student-reg-submit');
+
+Route::get('/register-success',function () {
+    return view('student.studentRegSuccess');
+})->name('student-reg');
 
 Route::fallback(function () {
     $error = "Page Not Found";
