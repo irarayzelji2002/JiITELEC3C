@@ -15,6 +15,8 @@
                 </li>
                 <div></div>
                 <li class="nav-item">
+                    {{-- {{ route('about-me') }} {{URL::to("/")}} {{url("/")}} --}}
+                    {{-- {{ route('project-details', ['type' => 'design', 'name' => 'balikuste2023']) }} --}}
                     <a class="nav-link" aria-current="page" href="{{ route('about-me') }}">About Me</a>
                 </li>
                 <li class="nav-item dropdown nav-dropdown">
