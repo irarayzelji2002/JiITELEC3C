@@ -139,9 +139,9 @@
                             <div class="form-group col-xl-6 col-md-12">
                                 <label class="playfair-display-semibold" for="irjNoOfDays">
                                     Number of Days
-                                    <span class="text-danger">*</span>
+                                    <span class="text-danger">*</span><br />
                                     @error('irjNoOfDays')
-                                        <span class="text-danger err-msg">{{ $message }}</span>
+                                        <span class="text-danger err-msg-top">{{ $message }}</span>
                                     @enderror
                                 </label>
                                 <input class="form-control @error('irjNoOfDays') is-invalid @enderror" type="number"
@@ -153,9 +153,9 @@
                             <div class="form-group col-xl-6 col-md-12">
                                 <label class="playfair-display-semibold" for="irjNoOfGuests">
                                     Number of Guests
-                                    <span class="text-danger">*</span>
+                                    <span class="text-danger">*</span><br />
                                     @error('irjNoOfGuests')
-                                        <span class="text-danger err-msg">{{ $message }}</span>
+                                        <span class="text-danger err-msg-top">{{ $message }}</span>
                                     @enderror
                                 </label>
                                 <input class="form-control @error('irjNoOfGuests') is-invalid @enderror" type="number"
