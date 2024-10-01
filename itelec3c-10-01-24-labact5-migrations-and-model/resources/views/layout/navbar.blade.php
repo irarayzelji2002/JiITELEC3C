@@ -16,6 +16,9 @@
                 <li class="nav-item">
                     <a class="nav-link" href="{{ route('reservation-form') }}">Room Reservation</a>
                 </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="{{ route('check-reservation-form') }}">Check Reservation</a>
+                </li>
             </ul>
         </div>
     </div>
