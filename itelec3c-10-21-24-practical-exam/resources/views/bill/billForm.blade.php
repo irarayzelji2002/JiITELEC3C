@@ -19,7 +19,8 @@
                                 <span class="playfair-display-semibold">Customer Name</span>
                                 <span class="text-danger">*</span>
                             </div>
-
+                        </div>
+                        <div class="row">
                             <div class="form-group col-xl-4 col-md-12">
                                 <label class="playfair-display-semibold" for="lastname" hidden>
                                     Last Name
@@ -32,32 +33,33 @@
                                     placeholder="Last Name">
                                 <small id="lastnameHelp" class="form-text text-muted">Last Name</small>
                             </div>
-                        </div>
 
-                        <div class="form-group col-xl-4 col-md-12">
-                            <label class="playfair-display-semibold" for="firstname" hidden>
-                                First Name
-                            </label>
-                            @error('firstname')
-                                <span class="text-danger err-msg-top">{{ $message }}</span>
-                            @enderror
-                            <input class="form-control @error('firstname') is-invalid @enderror" type="text"
-                                id="firstname" name="firstname" maxlength="255" value="{{ old('firstname') }}"
-                                placeholder="First Name">
-                            <small id="firstnameHelp" class="form-text text-muted">First Name</small>
-                        </div>
 
-                        <div class="form-group col-xl-4 col-md-12">
-                            <label class="playfair-display-semibold" for="middleInitial" hidden>
-                                Middle Initial
-                            </label>
-                            @error('middleInitial')
-                                <span class="text-danger err-msg-top">{{ $message }}</span>
-                            @enderror
-                            <input class="form-control @error('middleInitial') is-invalid @enderror" type="text"
-                                id="middleInitial" name="middleInitial" maxlength="255" value="{{ old('middleInitial') }}"
-                                placeholder="Middle Initial">
-                            <small id="middleInitialHelp" class="form-text text-muted">Middle Initial</small>
+                            <div class="form-group col-xl-4 col-md-12">
+                                <label class="playfair-display-semibold" for="firstname" hidden>
+                                    First Name
+                                </label>
+                                @error('firstname')
+                                    <span class="text-danger err-msg-top">{{ $message }}</span>
+                                @enderror
+                                <input class="form-control @error('firstname') is-invalid @enderror" type="text"
+                                    id="firstname" name="firstname" maxlength="255" value="{{ old('firstname') }}"
+                                    placeholder="First Name">
+                                <small id="firstnameHelp" class="form-text text-muted">First Name</small>
+                            </div>
+
+                            <div class="form-group col-xl-4 col-md-12">
+                                <label class="playfair-display-semibold" for="middleInitial" hidden>
+                                    Middle Initial
+                                </label>
+                                @error('middleInitial')
+                                    <span class="text-danger err-msg-top">{{ $message }}</span>
+                                @enderror
+                                <input class="form-control @error('middleInitial') is-invalid @enderror" type="text"
+                                    id="middleInitial" name="middleInitial" maxlength="255"
+                                    value="{{ old('middleInitial') }}" placeholder="Middle Initial">
+                                <small id="middleInitialHelp" class="form-text text-muted">Middle Initial</small>
+                            </div>
                         </div>
                 </div>
 

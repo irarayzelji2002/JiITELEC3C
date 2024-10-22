@@ -73,12 +73,15 @@ class Ji_billController extends Controller
 
         // Create a new bill with room price and total price
         $disconnection = $request->input('disconnection') == 1 ? 500 : 0;
-        $latePayment = $request->input('latePayment') == 1 ? $energyCharge * $subTypePrices[$subType] : 0;
+        $latePayment = $request->input('latePayment') == 1 ? $energyCharge * 0.3 : 0;
         $validatedData['energyCharge'] = $energyCharge;
         $validatedData['disconnection'] = $disconnection;
         $validatedData['latePayment'] = $latePayment;
 
         $totalBill = $energyCharge + $disconnection + $latePayment;
+        log($energyCharge);
+        log($disconnection);
+        log($latePayment);
         $validatedData['created_at'] = Carbon::now();
         $validatedData['totalBill'] = $totalBill;
 

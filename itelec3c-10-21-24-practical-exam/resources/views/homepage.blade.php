@@ -11,9 +11,6 @@
             <a class="btn btn-primary btn-c btn-reserve" href="{{ route('billing-form') }}" role="button">
                 Add and Compute Billing
             </a>
-            <a class="btn btn-primary btn-green btn-reserve" href="{{ route('check-billing-form') }}" role="button">
-                Check exisitng billing
-            </a>
         </h1>
     </section>
 @endsection

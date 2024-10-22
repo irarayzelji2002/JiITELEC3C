@@ -50,7 +50,13 @@
                             <div class="detail">
                                 <div class="playfair-display-semibold">Subscription Type</div>
                                 <div>{{ $data['subType'] }}
-                                    ({{ (($data['subType'] == 'Residential' ? 'Php 2.75 per KW' : $data['subType'] == 'Industrial') ? 'Php 3.75 per KW' : $data['subType'] == 'Commercial') ? 'Php 4.25 per KW' : '' }})
+                                    ({{ $data['subType'] == 'Residential'
+                                        ? 'Php 2.75 per KW'
+                                        : ($data['subType'] == 'Industrial'
+                                            ? 'Php 3.75 per KW'
+                                            : ($data['subType'] == 'Commercial'
+                                                ? 'Php 4.25 per KW'
+                                                : '')) }})
                                 </div>
                             </div>
                             <div class="detail">
@@ -68,6 +74,10 @@
                             <div class="detail">
                                 <div class="playfair-display-semibold">Energy Charge</div>
                                 <div>{{ 'Php ' . number_format($data['energyCharge'], 2) }}</div>
+                            </div>
+                            <div class="detail">
+                                <div class="playfair-display-semibold">Total Bill</div>
+                                <div>{{ 'Php ' . number_format($data['totalBill'], 2) }}</div>
                             </div>
                         </div>
                     </div>

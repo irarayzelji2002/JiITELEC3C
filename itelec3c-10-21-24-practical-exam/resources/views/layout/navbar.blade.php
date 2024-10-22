@@ -16,9 +16,6 @@
                 <li class="nav-item">
                     <a class="nav-link" href="{{ route('billing-form') }}">Billing Form</a>
                 </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="{{ route('check-billing-form') }}">Check Billing Form</a>
-                </li>
             </ul>
         </div>
     </div>
