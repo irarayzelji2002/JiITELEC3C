@@ -16,7 +16,7 @@ return new class extends Migration
             $table->string('firstname', 255);
             $table->string('lastname', 255);
             $table->char('middleInitial', 2);
-            $table->string('email', 255)->unique();
+            $table->string('email', 255);
             $table->bigInteger('contactNo');
             $table->string('street', 255);
             $table->string('city', 255);

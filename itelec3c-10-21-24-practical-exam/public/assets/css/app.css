@@ -1,17 +1,4 @@
 /* FONTS */
-@font-face {
-    font-family: "Hostel Transilvania";
-    src: url("/fonts/hosteltransilvania.ttf") format("truetype");
-    font-weight: 400, normal;
-    font-style: normal;
-}
-
-.hosteltransilvania-regular {
-    font-family: "Hostel Transilvania" !important;
-    font-weight: normal;
-    font-style: normal;
-}
-
 /* <uniquifier>: Use a unique and descriptive class name
 <weight>: Use a value from 400 to 900 */
 
@@ -151,7 +138,7 @@ p {
     padding-left: 2rem;
     padding-right: 2rem;
     color: #ffffff;
-    background-color: #39005a;
+    background-color: #ff8800;
     border: 0;
     align-self: center;
 }
@@ -159,41 +146,41 @@ p {
 .btn:focus,
 .btn:active {
     color: #ffffff;
-    background-color: #2f004b;
+    background-color: #f36100;
 }
 .btn:active:focus {
     color: #ffffff;
-    background-color: #2f004b;
+    background-color: #f36100;
 }
 
-.btn-violet {
+.btn-orange {
     color: #ffffff;
-    background-color: #490074;
+    background-color: #ff8800;
 }
-.btn-violet:hover,
-.btn-violet:focus,
-.btn-violet:active {
+.btn-orange:hover,
+.btn-orange:focus,
+.btn-orange:active {
     color: #ffffff;
-    background-color: #2f004b;
+    background-color: #f36100;
 }
-.btn-violet:active:focus {
+.btn-orange:active:focus {
     color: #ffffff;
-    background-color: #2f004b;
+    background-color: #f36100;
 }
 
-.btn-red {
-    color: #ffffff;
-    background-color: #960034;
+.btn-yellow {
+    color: #000000;
+    background-color: #ffc832;
 }
-.btn-red:hover,
-.btn-red:focus,
-.btn-red:active {
-    color: #ffffff;
-    background-color: #6b062a;
+.btn-yellow:hover,
+.btn-yellow:focus,
+.btn-yellow:active {
+    color: #000000;
+    background-color: rgb(255, 174, 25);
 }
-.btn-red:active:focus {
-    color: #ffffff;
-    background-color: #6b062a;
+.btn-yellow:active:focus {
+    color: #000000;
+    background-color: rgb(255, 174, 25);
 }
 
 .btn-green {
@@ -226,24 +213,24 @@ p {
     background-color: transparent;
 }
 .form-check-input:checked {
-    background-color: #6b062a;
-    border-color: #6b062a;
+    background-color: #ff8800;
+    border-color: #ff8800;
 }
 .btn-primary {
     --bs-btn-color: #fff;
-    --bs-btn-bg: #6b062a;
-    --bs-btn-border-color: #6b062a;
+    --bs-btn-bg: #ff8800;
+    --bs-btn-border-color: #ff8800;
     --bs-btn-hover-color: #fff;
-    --bs-btn-hover-bg: #570522;
-    --bs-btn-hover-border-color: #570522;
+    --bs-btn-hover-bg: #f36100;
+    --bs-btn-hover-border-color: #f36100;
     --bs-btn-focus-shadow-rgb: 130, 7, 51;
     --bs-btn-active-color: #fff;
-    --bs-btn-active-bg: #570522;
-    --bs-btn-active-border-color: #570522;
+    --bs-btn-active-bg: #f36100;
+    --bs-btn-active-border-color: #f36100;
     --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
     --bs-btn-disabled-color: #fff;
-    --bs-btn-disabled-bg: #6b062a;
-    --bs-btn-disabled-border-color: #6b062a;
+    --bs-btn-disabled-bg: #ff8800;
+    --bs-btn-disabled-border-color: #ff8800;
 }
 .form-control:focus,
 textarea:focus,
@@ -263,13 +250,13 @@ input[type="tel"]:focus,
 input[type="color"]:focus,
 input[type="radio"]:focus,
 .uneditable-input:focus {
-    border-color: rgba(130, 7, 51, 0.8);
+    border-color: rgba(255, 136, 0, 0.8);
     box-shadow: 0 1px 1px rgba(0, 0, 0, 0.075) inset,
-        0 0 0px rgba(130, 7, 51, 0.6);
+        0 0 0px rgba(255, 136, 0, 0.6);
     outline: 0 none;
 }
 ::selection {
-    background: rgba(168, 34, 81, 0.2);
+    background: rgba(243, 97, 0, 0.2);
 }
 @media (max-width: 1400px) {
 }

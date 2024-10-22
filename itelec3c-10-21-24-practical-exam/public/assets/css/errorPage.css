@@ -4,7 +4,7 @@
             rgba(0, 0, 0, 0.6),
             rgba(0, 0, 0, 0.6)
         ),
-        url("/assets/elements/bg/entrance.jpg");
+        url("/assets/elements/bg/Meralco_BG.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     min-height: calc(100vh - 76px);

@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use App\Models\Ji_bill;
 use Carbon\Carbon;
+use Illuminate\Database\QueryException;
 
 class Ji_billController extends Controller
 {
@@ -29,8 +30,8 @@ class Ji_billController extends Controller
             'zip' => 'required|numeric|digits:4',
             'noOfWatts' => 'required|numeric',
             'subType' => 'required|in:Residential,Industrial,Commercial',
-            'disconnection' => 'nullable|in:0,1',
-            'latePayment' => 'nullable|in:0,1',
+            'disconnection' => 'required|numeric|in:0,1',
+            'latePayment' => 'required|numeric|in:0,1',
         ], [
             // Custom error messages
             'middleInitial.max' => 'The :attribute must be 1 or 2 characters only.',
@@ -80,12 +81,21 @@ class Ji_billController extends Controller
         $totalBill = $energyCharge + $disconnection + $latePayment;
         $validatedData['created_at'] = Carbon::now();
         $validatedData['totalBill'] = $totalBill;
-        $bill = Ji_bill::create($validatedData);
 
-        return view('bill.billDetails', [
-            'data' => $bill,
+        try {
+            $bill = Ji_bill::create($validatedData);
+
+            return view('bill.billDetails', [
+                'data' => $bill,
         ]);
-    }
+        } catch (QueryException $e) {
+            // Check duplicate entry
+            if ($e->getCode() == 23000) {
+                return redirect()->back()->withInput()->withErrors(['email' => 'The email has already been taken.']);
+            }
+            return redirect()->back()->withInput()->withErrors(['genErr' => 'An error occurred while creating the bill. Please try again.']);
+        }
+        }
 
     public function showCheckBillForm() {
         return view('bill.checkBillForm');

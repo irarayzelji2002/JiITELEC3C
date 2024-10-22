@@ -12,10 +12,6 @@ Route::get('/bill', [Ji_billController::class, 'showForm'])->name('billing-form'
 
 Route::post('/bill', [Ji_billController::class, 'submitForm'])->name('billing-submit');
 
-Route::get('/check-bill', [Ji_billController::class, 'showCheckBillForm'])->name('check-billing-form');
-
-Route::post('/check-bill', [Ji_billController::class, 'submitCheckBillForm'])->name('check-billing-submit');
-
 // Route::get('/bill-details',function () {
 //     return view('bill.billDetails');
 // })->name('bill-details');

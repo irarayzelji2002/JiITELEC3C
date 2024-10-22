@@ -3,8 +3,8 @@ nav {
     position: fixed;
 }
 .navbar {
-    background-color: #900c3a !important;
-    background-image: linear-gradient(to right, #900c3a, #4d022c) !important;
+    background-color: #ff8800 !important;
+    background-image: linear-gradient(to right, #ff8800, #f36100) !important;
     box-shadow: 0 3px 10px rgba(0, 0, 0, 0.15);
 }
 .navbar .container-fluid {

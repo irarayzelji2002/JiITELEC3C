@@ -1,10 +1,11 @@
 .homepage {
     background-image: linear-gradient(
             to bottom,
-            rgba(0, 0, 0, 0),
-            rgba(0, 0, 0, 0)
+            rgba(0, 0, 0, 0.5),
+            rgba(0, 0, 0, 0.5)
         ),
         url("/assets/elements/bg/Meralco_BG.jpg");
+
     background-repeat: no-repeat;
     background-size: cover;
     min-height: calc(100vh - 76px);
@@ -18,7 +19,7 @@
     font-size: 5rem;
     padding: 0px 50px 0px 50px;
     position: absolute;
-    top: 80%;
+    top: 50%;
     left: 50%;
     width: fit-content;
     transform: translate(-50%, -50%);
@@ -27,8 +28,9 @@
 .homepage-title span {
     display: block;
 }
-.hotel-transylvania-text {
-    color: #fec00f;
+.title-text {
+    color: #ffffff;
+    transform: scale(0.8);
     font-size: 8rem;
     line-height: 1;
 }
@@ -39,12 +41,12 @@
     .homepage-title {
         font-size: 4.5rem;
     }
-    .hotel-transylvania-text {
+    .title-text {
         font-size: 7.2rem;
     }
 }
 @media only screen and (max-width: 885px) {
-    .hotel-transylvania-text {
+    .title-text {
         font-size: 6.3rem;
     }
     .homepage-title {
@@ -60,17 +62,17 @@
         font-size: 3.5rem;
         line-height: 1.5;
     }
-    .hotel-transylvania-text {
+    .title-text {
         font-size: 5.5rem;
     }
 }
 @media only screen and (max-width: 667px) {
-    .hotel-transylvania-text {
+    .title-text {
         font-size: 6.5rem;
     }
 }
 @media only screen and (max-width: 576px) {
-    .hotel-transylvania-text {
+    .title-text {
         font-size: 5.5rem;
     }
     .homepage-title {
@@ -82,7 +84,7 @@
     }
 }
 @media only screen and (max-width: 477px) {
-    .hotel-transylvania-text {
+    .title-text {
         font-size: 4.5rem;
     }
     .homepage-title {
@@ -91,7 +93,7 @@
     }
 }
 @media only screen and (max-width: 360px) {
-    .hotel-transylvania-text {
+    .title-text {
         font-size: 4rem;
     }
     .homepage-title {

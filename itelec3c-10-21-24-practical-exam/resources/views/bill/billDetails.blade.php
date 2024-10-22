@@ -55,11 +55,11 @@
                             </div>
                             <div class="detail">
                                 <div class="playfair-display-semibold">Disconnection Charge</div>
-                                <div>{{ $data['disconnection'] }}</div>
+                                <div>{{ 'Php ' . number_format($data['disconnection'], 2) }}</div>
                             </div>
                             <div class="detail">
                                 <div class="playfair-display-semibold">Late Payment Charge</div>
-                                <div>{{ $data['latePayment'] }}</div>
+                                <div>{{ 'Php ' . number_format($data['latePayment'], 2) }}</div>
                             </div>
 
                             <!-- Bill -->
@@ -67,7 +67,7 @@
                             </h6>
                             <div class="detail">
                                 <div class="playfair-display-semibold">Energy Charge</div>
-                                <div>{{ $data['irjNoOfDays'] }}</div>
+                                <div>{{ 'Php ' . number_format($data['energyCharge'], 2) }}</div>
                             </div>
                         </div>
                     </div>
@@ -86,7 +86,7 @@
                             </p>
                         </div>
                         <div class="d-flex justify-content-center mt-3">
-                            <a class="btn btn-primary btn-red" href="{{ route('bill-form') }}" role="button">
+                            <a class="btn btn-primary btn-v" href="{{ route('bill-form') }}" role="button">
                                 Add and Compute Billing
                             </a>
                         </div>

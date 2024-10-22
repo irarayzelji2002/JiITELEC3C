@@ -6,7 +6,7 @@
             </div>
         </div>
         <div class="col-lg-4 col-md-12 footer-col">
-            <a class="btn btn-primary btn-violet" href="{{ route('billing-form') }}" role="button">
+            <a class="btn btn-primary btn-yellow" href="{{ route('billing-form') }}" role="button">
                 Add and Compute Billing
             </a>
         </div>

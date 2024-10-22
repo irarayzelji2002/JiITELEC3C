@@ -29,7 +29,7 @@
                                 @enderror
                                 <input class="form-control @error('lastname') is-invalid @enderror" type="text"
                                     id="lastname" name="lastname" maxlength="255" value="{{ old('lastname') }}"
-                                    placeholder="First Name">
+                                    placeholder="Last Name">
                                 <small id="lastnameHelp" class="form-text text-muted">Last Name</small>
                             </div>
                         </div>
@@ -43,7 +43,7 @@
                             @enderror
                             <input class="form-control @error('firstname') is-invalid @enderror" type="text"
                                 id="firstname" name="firstname" maxlength="255" value="{{ old('firstname') }}"
-                                placeholder="Last Name">
+                                placeholder="First Name">
                             <small id="firstnameHelp" class="form-text text-muted">First Name</small>
                         </div>
 
@@ -206,22 +206,27 @@
                         Other Charges
                     </label><br>
                     <div class="d-flex">
-                        @error('disconnection')
-                            <span class="text-danger err-msg">{{ $message }}</span>
-                        @enderror
                         <div class="form-check form-check-inline flex-fill">
+                            @error('disconnection')
+                                <span class="text-danger err-msg">{{ $message }}</span>
+                            @enderror
+                            <input type="hidden" name="disconnection" value="0">
                             <input class="form-check-input" type="checkbox" id="disconnection" name="disconnection"
-                                value="1" {{ old('disconnection') != 0 ? 'checked' : '' }}>
+                                value="1"
+                                {{ old('disconnection', $request->disconnection ?? 0) == 1 ? 'checked' : '' }}>
                             <label class="form-check-label playfair-display-regular" for="disconnection">
                                 Disconnection (Php 500.00)
                             </label>
                         </div>
-                        @error('latePayment')
-                            <span class="text-danger err-msg">{{ $message }}</span>
-                        @enderror
                         <div class="form-check form-check-inline flex-fill">
+                            @error('latePayment')
+                                <span class="text-danger err-msg">{{ $message }}</span>
+                            @enderror
+                            <input type="hidden" name="latePayment" value="0">
                             <input class="form-check-input" type="checkbox" id="latePayment" name="latePayment"
                                 value="1" {{ old('latePayment') != 0 ? 'checked' : '' }}>
+                            <input class="form-check-input" type="checkbox" id="latePayment" name="latePayment"
+                                value="1" {{ old('latePayment', $request->latePayment ?? 0) == 1 ? 'checked' : '' }}>
                             <label class="form-check-label playfair-display-regular" for="latePayment">
                                 Late Payment (30% of the Energy Charge)
                             </label>
@@ -234,7 +239,7 @@
                     @error('genErr')
                         <span class="text-danger err-msg-top">{{ $message }}</span>
                     @enderror
-                    <button type="submit" class="btn btn-primary btn-red btn-reg">Add and Compute
+                    <button type="submit" class="btn btn-primary btn-orange btn-reg">Add and Compute
                         Billing</button>
                 </div>
                 </form>

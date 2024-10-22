@@ -17,7 +17,7 @@
                         </p>
                     </div>
                     <div class="d-flex justify-content-center mt-3">
-                        <a class="btn btn-primary btn-red" href="{{ route('home') }}" role="button">
+                        <a class="btn btn-primary btn-orange" href="{{ route('home') }}" role="button">
                             Go to Homepage
                         </a>
                     </div>
